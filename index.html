@@ -3,15 +3,19 @@
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
   </head>
   <body>
+    
     <a-scene>
-  <a-assets>
-    <a-asset-item id="room" src="model/show_room.glb"></a-asset-item>
-  </a-assets>
+      <a-assets>
+        <a-asset-item id="room" src="model/show_room.glb"></a-asset-item>
+      </a-assets>
 
-  <a-entity gltf-model="#room" position="0 0 0" scale="1 1 1"></a-entity>
-  <a-sky color="#6EBAA7"></a-sky>
-  <a-camera position="0 3 0"></a-camera>
+      <a-entity gltf-model="#room" position="0 0 0" scale="1 1 1"></a-entity>
+      <a-sky color="#6EBAA7"></a-sky>
+
+      <a-entity position="0 2.5 0">
+        <a-camera></a-camera>
+      </a-entity>
       
-</a-scene>
+    </a-scene>
   </body>
 </html>
