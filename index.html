@@ -10,10 +10,12 @@
         <a-asset-item id="invisible" src="model/invisible.glb"></a-asset-item>
       </a-assets>
 
-      <a-entity gltf-model="#invisible" position="16 0 14" scale="1 1 1"　animation="property: rotation; from: 0 0 0 ; to:0 360 0 ; loop: true; dur: 5000>"</a-entity>
+      
 
       
-      <a-entity gltf-model="#room" position="0 0 0" scale="1 1 1"></a-entity>
+      <a-entity gltf-model="#room" position="0 0 0" scale="1 1 1">
+        <a-entity gltf-model="#invisible" position="16 0 14" scale="1 1 1"　animation="property: rotation; from: 0 0 0 ; to:0 360 0 ; loop: true; dur: 5000>"</a-entity>
+      </a-entity>
       <a-sky color="#8888ff"></a-sky>
       
     </a-scene>
